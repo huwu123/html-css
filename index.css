@@ -1,0 +1,727 @@
+/*
+* @Author: Administrator
+* @Date:   2019-06-11 08:50:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2019-07-25 14:55:40
+*/
+
+
+
+*{margin: 0;padding: 0;}
+ul,ol{list-style-type: none;}
+html,body{font-size: 14px; font-family: '微软雅黑';}
+a{text-decoration: none;color: #202020;}
+/* 公共类 */
+.left{float: left;}
+.right{float: right;}
+.overflowH{overflow: hidden;}
+.clearBox:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.autoCenter{width:1008px; margin: 0 auto;}
+/* 头部第一行 */
+.head{
+	/* width: 1280px; */
+	height: 33px;
+	background: #353535;
+	margin: 0 auto;
+}
+.head .head_1{
+	height: 33px;
+	/* border: 1px solid white; */
+	color: white;line-height: 33px;	
+}
+.head .head_1 .weather{
+	line-height: 22px;
+	margin-right: 8px;	
+}
+.head .head_1 .weather img{
+	float: left;
+	margin-top: 5px;
+}
+.head .head_1 .day a{
+	color: white;
+}
+.head .head_1 .row_2 img{
+	float: left;
+	margin-top: 8px;
+	margin-left: 8px;
+}
+.head .head_1 .row_2 img:last-child{
+	margin-top:5px;
+}
+.head .head_1 .row_2 span{
+	float: left;
+}
+/* 头部第二行 */
+.head_2{
+	height: 116px;
+	/* border: 1px solid red; */
+}
+.head_2 .search{
+	/* border: 1px solid blue; */
+	width: 404px;
+	height: 40px;
+	margin-top: 38px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+.head_2 .search input{
+	display: inline-block;
+	width: 235px;
+	height: 38px;
+	float: left;
+	margin-left: 50px;
+	padding-left: 8px;
+}
+.head_2 .search span{
+	float: left;
+	margin-top: 10px;
+}
+/* 头部第三行 */
+.head_3{
+	height: 44px;
+	/* width: 1280px; */
+	background: #0A7723;
+	margin: 0 auto;
+	line-height: 44px;
+}
+.head_3 .nav a{
+	font-size: 16px;
+	color: white;
+	margin-left:40px;
+ 	width: 100px;
+	height: 42px; 
+	display: inline-block;
+	/* border-top: 2px solid red;  */
+	text-align: center;
+}
+.head_3 .nav a:hover{
+	width: 100px;
+	height: 42px;
+	background:#F78A00;
+	display: inline-block;
+	text-align: center;
+	 border-top: 2px solid red;	
+}
+.head_3 .nav a:first-child{
+	width: 100px;
+	height: 42px;
+	background:#F78A00;
+	display: inline-block;
+	text-align: center;
+	border-top: 2px solid red;	
+}
+/* 头部第四行 */
+.head_4{
+	height: 326px;
+	/* border: 1px solid red; */
+	margin-top: 10px;
+	text-indent: 8px;
+}
+.head_4 .picBox{
+	width: 718px;
+	position: relative;
+}
+.head_4 .picBox img{
+	display: none;
+}
+.head_4 .picBox img:first-child{
+	display: block;
+}
+.head_4 .picBox .squares {
+	/* background: blue; */
+	bottom: 10px;
+	padding-left: 0;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.head_4 .picBox .squares span{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background: #ccc;
+	margin: 0 3px;
+	border-radius: 10px;
+
+}
+.head_4 .picBox .squares .current{
+	background: #1A6A8E;
+}
+.head_4 .infro{
+	margin-top: 5px;
+	margin-right: 10px;
+}
+/* 主体内容 */
+.center{
+	/* height: 2000px; */
+	/* border: 1px solid red; */
+	margin-top: 18px;
+}
+.center  .title {
+	line-height: 36px;
+	font-size: 24px;
+	color: #888;
+	overflow: hidden;
+	/* border: 1px solid red; */
+}
+.center .title span{
+	width: 5px;
+	height: 22px;
+	background: orange;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top:7px;
+}
+.center .title a{
+	font-size: 16px;
+	color: #4468CC;
+	margin-right: 20px;
+}
+.center .title>a{
+	font-size: 14px;
+}
+/* 信息分享 */
+.center .xxfx{
+	width: 724px;
+	height: 280px;
+	/* border: 1px solid blue; */
+	padding-left: 6px;
+}
+.center .xxfx table td{
+	height: 70px;
+}
+.center .xxfx table tr td:last-child{
+	font-size: 30px;
+	color:#949494; 
+}
+.center .xxfx table p a{
+	color: #ccc;
+}
+
+/* 报考信息 */
+.center .bkxx{
+	/* border: 1px solid red; */
+	width: 269px;
+	height: 280px;
+	
+}
+.center .bkxx .p1{
+	background: url(img/2_37.png) no-repeat 5px 0;
+	text-indent: 40px;
+	/* border: 1px solid blue; */
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-top: 16px;
+
+}
+
+.center .bkxx .p1 p:first-child{
+	font-size: 16px;
+	font-weight: bold;
+}
+.center .bkxx .p1 p:last-child a{
+	font-size: 12px;
+	color: #949494;
+}
+.center .bkxx .p2{
+	background: url(img/2_40.png) no-repeat 5px 0;
+	text-indent: 40px;
+	/* border: 1px solid blue; */
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-top: 16px;
+
+}
+.center .bkxx .p2 p:first-child{
+	font-size: 16px;
+	font-weight: bold;
+}
+.center .bkxx .p2 p:last-child a{
+	font-size: 12px;
+	color: #949494;
+}
+.center .bkxx .p3{
+	background: url(img/2_43.png) no-repeat 5px 0;
+	text-indent: 40px;
+	/* border: 1px solid blue; */
+	padding-bottom: 15px;
+	margin-top: 16px;
+
+}
+.center .bkxx .p3 p:first-child{
+	font-size: 16px;
+	font-weight: bold;
+}
+.center .bkxx .p3 p:last-child a{
+	font-size: 12px;
+	color: #949494;
+}
+.center .bkxx .circles span{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: #ccc;
+	margin: 0 3px;
+	border-radius: 10px;
+}
+.center .bkxx .circles .current{
+	background: red;
+}
+.center .bkxx .circles{
+	margin-left: 100px;
+	margin-top: 6px;
+}
+/* 第二行 */
+.center .row_2{
+	width: 1008px;
+	/* height:500px; */
+	/* border: 1px solid blue; */
+	clear: both;
+	overflow: hidden;
+}
+/* 快捷查询 */
+.center .row_2 .kjcx{
+	width: 720px;
+	height: 415px;
+	/* border: 1px solid black; */
+	font-size: 16px;
+	line-height: 36px;
+}
+.center .row_2 .kjcx table td{
+	border-bottom: 1px solid #ccc;
+	color: #989898;
+}
+.center .row_2 .kjcx table th{
+	border-bottom: 1px solid #ccc;
+}
+.center .row_2 .kjcx table tr:last-child td{
+	border-bottom: none;
+}
+.center .row_2 .kjcx table tr:last-child th{
+	border-bottom: none;
+}
+/* 高考进行时 */
+.center .row_2 .gkjxs{
+	width: 269px;
+	height:408px;
+	/* border:1px solid red; */
+	padding-top: 10px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.center .row_2 .gkjxs .download{
+	border: 1px solid #ccc;
+	line-height: 50px;
+	margin-top: 20px;
+	padding: 0 8px;
+}
+.center .row_2 .gkjxs .download li{
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+.center .row_2 .gkjxs .download li:last-child{
+	border-bottom: none;
+}
+.center .row_2 .gkjxs .download li span{
+	float: right;
+	display: inline-block;
+	width: 59px;
+	height: 20px;
+	/* border: 1px solid red; */
+	text-align: center;
+	line-height: 20px;
+	background: url(img/2_50.png) no-repeat;
+	color: white;
+	font-size: 12px;
+	margin-top: 14px;
+	font-weight: normal;
+
+}
+/* 第三行 banner */
+.center .banner_1{
+	width: 1007px;
+	/* border: 1px solid red; */
+	padding-left: 3px;
+}
+/* 第四行，学生跳蚤 */
+.center .xsts{
+	width: 1007px;
+	overflow: hidden;
+}
+.center .xsts .sj table{
+	border-right: 1px solid #ccc;
+	padding: 5px 5px;
+}
+
+.center .xsts .sj a{
+	color: #43DDA3;
+	font-size: 12px;
+}
+.center .xsts .dzcp table{
+	border-right: 1px solid #ccc;
+	padding: 5px 5px;
+}
+
+.center .xsts .dzcp a{
+	color: #43DDA3;
+	font-size: 12px;
+}
+.center .xsts .yf table{
+	border-right: 1px solid #ccc;
+	padding: 5px 5px;
+}
+
+.center .xsts .yf a{
+	color: #43DDA3;
+	font-size: 12px;
+}
+.center .xsts .qt table{
+	padding: 5px 5px;
+}
+
+.center .xsts .qt a{
+	color: #43DDA3;
+	font-size: 12px;
+}
+
+/* 微博互粉好友 */
+.center .wbhf{
+	width: 742px;
+	height: 147px;
+	/* border: 1px solid red; */
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+}
+.center .zltj{
+	width: 256px;
+	height: 146px;
+	border: 2px solid orange;
+	margin-top: 10px;
+}
+.center .zltj h4{
+	background: orange;
+	color: white;
+	font-size: 14px;
+	text-indent: 5px;
+}
+.center .zltj img{
+	margin-top: 14px;
+	margin-left: 5px;
+}
+.center .zltj .btns{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.center .zltj .btns .current{
+	background: red;
+}
+.center .zltj .btns span{
+	width: 10px;
+	height: 10px;
+	background: #ccc;
+	display: block;
+	border-radius: 10px;
+	margin-top: 4px;
+}
+/* 缤纷校园 */
+.center .bfxy{
+	width: 504px;
+	height: 230px;
+	/* border: 1px solid red; */
+	border-right: 2px solid #ccc;
+	padding-right: 15px;
+	line-height: 35px;
+	margin-left: 6px;
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+.center .bfxy .title{
+	border-bottom: 2px solid #ccc;
+	margin-bottom: -1px;
+	
+}
+.center .bfxy .title a{
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	margin: 0 14px;
+	/* border: 1px solid blue; */
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+
+}
+
+.center .bfxy .title .current{
+	border: 2px solid #ccc;
+	border-top: 2px solid blue;
+	border-bottom: none;
+}
+
+.center .bfxy ul {
+	list-style: inside;
+
+}
+.center .bfxy ul li font{
+	float: right;
+	font-size: 12px;
+}
+/* 学生兼职 */
+.center .xsjz{
+	width: 460px;
+	height: 230px;
+	/* border: 1px solid red; */
+	padding-right: 4px;
+	line-height: 35px;
+	margin-left: 6px;
+	margin-top: 16px;
+}
+.center .xsjz .title{
+	border-bottom: 2px solid #ccc;
+}
+.center .xsjz .title a{
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	margin: 0 14px;
+	/* border: 1px solid blue; */
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+
+.center .xsjz .title .current{
+	border: 2px solid #ccc;
+	border-top: 2px solid blue;
+	border-bottom: none;
+}
+.center .xsjz ul {
+	list-style: inside;
+}
+.center .xsjz ul li font{
+	float: right;
+	font-size: 12px;
+}
+.center .xsjz ul li a{
+	color: red;
+	font-size: 12px;
+}
+/* 第七行banner图 */
+.center .banner_2{
+	width: 1007px;
+	padding-left: 3px;
+}
+/* 第八行。房屋租赁 */
+.center .fwzl {
+	width: 725px;
+	height: 615px;
+	/* border: 1px solid red; */
+}
+
+.center .fwzl .infro table{
+	line-height: 30px;
+	width: 720px;	
+	margin-top: 20px;
+}
+.center .fwzl .infro table td{
+	border-bottom: 2px solid #ccc;
+	padding:8px 0;
+}
+.center .fwzl .infro table tr:last-child td{
+	border-bottom: none;
+}
+/* 省内大学 */
+.center .sndx{
+	width: 270px;
+	height:270px;
+	line-height: 40px;
+	text-align: center;
+	/* border: 1px solid red; */
+}
+.center .sndx table td{
+	border-bottom: 2px dashed #ccc;
+}
+.center .sndx table tr:last-child td{
+	border-bottom: 2px solid #ccc;
+}
+.center .sjhm{
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width: 268px;
+	height:302px;
+	margin-top: 20px;
+
+}
+.center .sjhm ul li{
+	border-bottom: 1px solid #ccc;
+	line-height: 50px;
+}
+.center .sjhm ul li:last-child{
+	border-bottom: none;
+}
+.center .sjhm ul li span{
+	float: right;
+	margin-right: 10px;
+	font-weight: bold;
+}
+.center .sjhm img{
+	float: left;
+	margin-top: 10px;
+	margin-right: 6px;
+	margin-left: 10px;
+}
+/* 第九行2013会计职称 */
+.center .banner_3{
+	width: 1007px;
+	padding-left: 3px;
+}
+/* 第十行教育百科 */
+.center .jybk  .t font:last-child a{
+	font-size:14px;
+	color: black;
+	font-weight: normal;
+}
+.center .jybk .t{
+	border-bottom: 2px solid #ccc;
+}
+.center .jybk img{
+	margin: 8px 10px 0 0;
+}
+.center .jybk .l{
+	width: 300px;
+	height:180px;
+	/* border: 1px solid red; */
+	font-size: 14px;
+	line-height: 36px;
+	
+	margin-left: 20px;
+	margin-top: 8px;
+}
+.center .jybk .l ul{
+	list-style: inside;
+}
+/* 第十一行校园周边 */
+.center .xyzb{
+	clear: both;
+	width: 629px;
+	heigth:380px;
+	overflow: hidden;
+	/* border: 1px solid red; */
+	line-height: 46px;	
+}
+.center .xyzb .title{
+	border-bottom: 1px solid #ccc;
+}
+.center .xyzb .tb tr td{
+	border-bottom: 1px solid #ccc;
+
+}
+.center .xyzb .tb{
+	margin-left: 8px;
+	margin-top: 8px;
+}
+/* 新浪微博 */
+.center .xlwb{
+	width: 360px;
+	height: 380px;
+	/* border: 1px solid red; */
+	margin-left: 12px;
+}
+.center .xlwb .title{
+	border-bottom: 1px solid #ccc;
+}
+.center .xlwb .hy {
+	height: 70px;
+	/* border: 1px solid blue; */
+	border-bottom:1px solid #ccc;
+}
+.center .xlwb .hy img{
+	margin: 5px ;
+}
+.center .xlwb .hy .jx{
+	margin: 5px;
+	font-size: 14px;
+	color: #36AAC5;
+	line-height: 30px;
+}
+.center .xlwb .hy .jx font{
+	font-size: 10px;
+}
+.center .xlwb .dmh{
+	heigth:170px;
+	/* border: 1px solid red; */
+	text-indent: 6px;
+}
+.center .xlwb .dmh img{
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.center .xlwb .zmsh p{
+	border:1px solid #ccc;
+	border-radius: 10px;
+	line-height: 28px;
+	width: 350px;
+	margin-top: 6px;
+}
+/* 尾部第一行 */
+.center .foot_1{
+	clear: both;
+	/* border: 1px solid red; */
+	width: 1007px;
+	/* height: 165px; */
+}
+.center .foot_1 .pic{
+	/* border: 1px solid red; */
+	text-align: center;
+	word-spacing: 6px;	
+}
+.center .foot_1 .zt{
+	/* border: 1px solid red; */
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+}
+.center .foot_1 .zt span{
+	margin-left: 6px;
+}
+/* 尾部第二行 */
+.foot_2{
+	/* width: 1279px; */
+	height:160px;
+	/* border: 1px solid red; */
+	background: #353535;
+	color: white;	
+}
+.foot_2 .foot_center{
+	height: 160px;
+	/* border:1px solid white; */
+}
+.foot_2 a{
+	color: white;
+}
+.foot_2 .r{
+	/* border:1px solid white; */
+}
+.foot_2 .zt1{
+	width: 500px;
+	height: 38px;
+	/* border: 1px solid red; */
+	margin-top: 25px;
+	line-height: 38px;
+}
+.foot_2 .zt2{
+	width: 488px;
+	/* height: 100px; */
+	/* border: 1px solid red; */
+	line-height: 30px;
+}
+.foot_2 .r .pic{
+	margin-top: 30px;
+}
+
